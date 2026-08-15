@@ -1,0 +1,299 @@
+/* Universal Framework Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #08090c;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Master Fixed Core Cover Block */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(circle at center, #12141c 0%, #08090c 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+  transition: opacity 0.5s cubic-bezier(0.25, 1, 0.5, 1), visibility 0.5s ease;
+}
+
+/* Centralized Layout Wrapper */
+.loader-content {
+  text-align: center;
+  width: 100%;
+  max-width: 340px;
+  padding: 20px;
+}
+
+/* Premium Title Typography Engine */
+.brand-title {
+  color: #ffffff;
+  font-size: 2.8rem;
+  font-weight: 900;
+  letter-spacing: 5px;
+  line-height: 1;
+}
+
+/* Iconic StateFlix Branding Accent */
+.brand-title span {
+  color: #e50914; 
+}
+
+.loader-subtitle {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 8px;
+  margin-top: 6px;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  text-indent: 8px;
+}
+
+/* Fixed Hardware Progress Bar Shell */
+.progress-container {
+  width: 100%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+/* Linear Velocity Fill Bar Controls */
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #e50914 0%, #ff454f 100%);
+  border-radius: 4px;
+  transition: width 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Flex Align For Live Micro-Information */
+.status-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loading-status {
+  color: #4b5563;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.loading-percentage {
+  color: #e50914;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: monospace;
+}
+
+/* Hardware accelerated CSS class injected by JS during cycle completions */
+#preloader.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* --- STATEFLIX DASHBOARD GRID MATRIX --- */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 80px 20px;
+}
+
+/* Custom Navigation Bar Controls */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  margin-bottom: 60px;
+}
+
+.nav-logo {
+  font-weight: 900;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+.nav-logo span { color: #e50914; }
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Live Dynamic Signal Indicator */
+.live-indicator {
+  font-size: 0.8rem;
+  color: #10b981;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(16, 185, 129, 0.08);
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(16, 185, 129, 0.15);
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #10b981;
+  border-radius: 50%;
+  display: inline-block;
+  animation: signalPulse 1.5s infinite ease-in-out;
+}
+
+@keyframes signalPulse {
+  0% { transform: scale(0.9); opacity: 0.6; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.6; }
+}
+
+.nav-btn {
+  background-color: #e50914;
+  color: #ffffff;
+  border: none;
+  padding: 10px 22px;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+.nav-btn:hover {
+  background-color: #b8070f;
+  transform: translateY(-1px);
+}
+
+/* Redefined Hero Framework Layout */
+.hero-section {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px auto;
+}
+
+.badge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  background: rgba(229, 9, 20, 0.1);
+  color: #ff454f;
+  padding: 6px 14px;
+  border-radius: 4px;
+  border: 1px solid rgba(229, 9, 20, 0.2);
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.hero-section h1 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+.hero-section h1 span { color: #e50914; }
+
+.hero-section p {
+  color: #9ca3af;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Master Core Multi-Column Earning Display Layout */
+.earning-matrix-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  width: 100%;
+}
+
+/* Premium Component Card Elements */
+.earning-card {
+  background: linear-gradient(145deg, #11131a 0%, #0a0c10 100%);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 30px;
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.earning-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(229, 9, 20, 0.3);
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.card-desc {
+  color: #6b7280;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  flex-grow: 1;
+}
+
+/* Prominent Numeric Financial Metrics Display */
+.card-payout {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #10b981;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  padding-top: 20px;
+  margin-bottom: 18px;
+}
+.card-payout span {
+  color: #4b5563;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Secondary Level Trigger Buttons */
+.card-action-btn {
+  background-color: rgba(255, 255, 255, 0.03);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 12px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.earning-card:hover .card-action-btn {
+  background-color: #e50914;
+  border-color: #e50914;
+  box-shadow: 0 4px 15px rgba(229, 9, 20, 0.3);
+}
