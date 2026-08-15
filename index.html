@@ -90,5 +90,75 @@
 
   <!-- Critical Cloudflare-Safe Production Script Link -->
   <script data-cfasync="false" src="script.js"></script>
+    <!-- ========================================== -->
+  <!-- PREMIUM COMPACT AUTHENTICATION SYSTEM      -->
+  <!-- ========================================== -->
+  <div id="auth-modal" class="auth-modal-overlay">
+    <div class="auth-card">
+      <!-- Modal Close Interface Switch -->
+      <button class="modal-close-btn" id="close-auth-btn">&times;</button>
+      
+      <!-- Dynamic Form Toggle Controls -->
+      <div class="auth-tabs">
+        <button class="tab-btn active" id="tab-login" onclick="switchAuthTab('login')">Sign In</button>
+        <button class="tab-btn" id="tab-register" onclick="switchAuthTab('register')">Create Account</button>
+      </div>
+
+      <!-- Live Notification Banner Node -->
+      <div class="auth-alert" id="auth-alert" style="display: none;"></div>
+
+      <!-- SIGN IN COMPONENT MATRIX -->
+      <form id="login-form" class="auth-form active" onsubmit="handleAuthSubmit(event, 'login')">
+        <div class="form-group">
+          <label>Agent Email or Username</label>
+          <input type="text" placeholder="Enter your credentials" required autocomplete="username">
+        </div>
+        <div class="form-group">
+          <div class="label-wrapper">
+            <label>Secure Password</label>
+            <a href="#" class="forgot-link">Forgot?</a>
+          </div>
+          <input type="password" placeholder="••••••••" required autocomplete="current-password">
+        </div>
+        <button type="submit" class="submit-auth-btn">Initialize Session 🚀</button>
+      </form>
+
+      <!-- REGISTRATION COMPONENT MATRIX -->
+      <form id="register-form" class="auth-form" onsubmit="handleAuthSubmit(event, 'register')">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="John" required>
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Doe" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Select Matrix Username</label>
+          <input type="text" placeholder="agent_prime" required>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="name@domain.com" required>
+        </div>
+        <div class="form-group">
+          <label>Referral Agent Username (Optional)</label>
+          <input type="text" placeholder="Leave blank if none">
+        </div>
+        <div class="form-group">
+          <label>Choose Secure Password</label>
+          <input type="password" placeholder="Create strong code" required autocomplete="new-password">
+        </div>
+        <div class="form-checkbox">
+          <input type="checkbox" id="terms-check" required>
+          <label for="terms-check">I verify my age and agree to StateFlix Terms.</label>
+        </div>
+        <button type="submit" class="submit-auth-btn">Activate Node Portfolio 💳</button>
+      </form>
+    </div>
+  </div>
+
 </body>
 </html>
