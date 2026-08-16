@@ -24,7 +24,22 @@
   </div>
 
   <!-- Dashboard Container -->
- 🗒 1. Step 1: Update Your Structure (index.html)Open your index.html file on GitHub. We will add a secure dashboard viewport. Replace your current <main class="main-content"> block with this dual-view setup (Landing page + hidden Agent Dashboard Area):
+   <main class="main-content">
+    <!-- VIEW A: MULTI-TASK LANDING PAGE -->
+    <div id="landing-view">
+      <!-- Nav & Hero Content -->
+      <nav class="navbar">...</nav>
+      <section class="hero-section">...</section>
+      <!-- Earning Grid -->
+      <section class="earning-matrix-grid">...</section>
+    </div>
+
+    <!-- VIEW B: PRIVILEGED USER AGENT DASHBOARD -->
+    <div id="dashboard-view" style="display: none;">
+      <!-- Metrics & Workspace Grid -->
+    </div>
+  </main>
+
     <section class="hero-section">
       <span class="badge">STATEFLIX AGENT GATEWAY</span>
       <h1>Turn Smart Tasks Into <br><span>Real Digital Income</span></h1>
