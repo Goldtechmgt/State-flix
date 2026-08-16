@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stateflix Agencies - Official Launch</title>
-    <!-- Tailwind CSS CDN -->
+    <!-- Tailwind CSS Engine -->
     <script src="https://tailwindcss.com"></script>
-    <!-- Google Fonts -->
+    <!-- Google Fonts Framework -->
     <link href="https://googleapis.com" rel="stylesheet">
-    <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-    </style>
+    <!-- Local CSS Link -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-slate-950 text-white selection:bg-red-500 selection:text-white">
 
-    <!-- Top Announcement Bar -->
-    <div class="bg-gradient-to-r from-red-600 to-amber-600 text-center py-2 px-4 text-xs font-bold tracking-wide uppercase">
+    <!-- Top Urgent Announcement Banner -->
+    <div class="bg-gradient-to-r from-red-600 to-amber-600 text-center py-2.5 px-4 text-xs font-bold tracking-wide uppercase shadow-lg">
         🚀 Official Global Launch: August 22nd at 2:00 PM!
     </div>
 
@@ -28,7 +27,8 @@
             <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-400">
                 <a href="#earning-methods" class="hover:text-red-500 transition">Earning Ways</a>
                 <a href="#activation-fees" class="hover:text-red-500 transition">Activation Fees</a>
-                <a href="#countdown" class="hover:text-red-500 transition">Launch Timer</a>
+                <a href="#demo" class="hover:text-red-500 transition">Dashboard Demo</a>
+                <a href="#faq" class="hover:text-red-500 transition">FAQ</a>
             </div>
             <div>
                 <a href="#register" class="bg-red-600 hover:bg-red-700 text-white font-bold px-5 py-2 rounded-full text-sm transition shadow-lg shadow-red-600/20">
@@ -38,8 +38,8 @@
         </div>
     </nav>
 
-    <!-- Hero Section & Live Countdown -->
-    <header id="countdown" class="relative overflow-hidden px-6 pt-16 pb-20 text-center max-w-4xl mx-auto">
+    <!-- Hero Section & Live Countdown Hero Layout -->
+    <header id="countdown-header" class="relative overflow-hidden px-6 pt-16 pb-20 text-center max-w-4xl mx-auto">
         <div class="absolute top-0 left-1/2 -translate-x-1/2 w-80 h-80 bg-red-600/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
@@ -50,8 +50,8 @@
             Welcome to STATEFLIX. Chat globally, stream trending tracks, play interactive logic games, and convert your online activity into immediate wallet payouts.
         </p>
 
-        <!-- Countdown Timer Component -->
-        <div class="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 max-w-xl mx-auto mb-10 backdrop-blur-sm">
+        <!-- Live Countdown Component Display Box -->
+        <div id="timer-box" class="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 max-w-xl mx-auto mb-10 backdrop-blur-sm">
             <p class="text-xs uppercase tracking-widest text-slate-400 font-bold mb-4">Countdown to Grand Launch</p>
             <div class="grid grid-cols-4 gap-2 text-center">
                 <div class="bg-slate-950 p-3 rounded-2xl border border-slate-800/80">
@@ -83,7 +83,7 @@
         </div>
     </header>
 
-    <!-- Core Earning Ways (Mulaprime & DigitalEarners Style) -->
+    <!-- Core Earning Ways -->
     <section id="earning-methods" class="max-w-7xl mx-auto px-6 py-20 border-t border-slate-900">
         <div class="text-center max-w-xl mx-auto mb-16">
             <h2 class="text-3xl font-extrabold mb-4">How You Will Earn</h2>
@@ -109,7 +109,7 @@
         </div>
     </section>
 
-    <!-- Country Activation Fees Section -->
+    <!-- Activation Fees Section -->
     <section id="activation-fees" class="bg-slate-900/30 border-y border-slate-900 py-20 px-6">
         <div class="max-w-6xl mx-auto">
             <div class="text-center max-w-xl mx-auto mb-16">
@@ -118,7 +118,6 @@
             </div>
 
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                <!-- Fees mapping -->
                 <div class="bg-slate-900 border border-slate-800/60 p-4 rounded-2xl flex items-center justify-between">
                     <span class="text-sm font-medium text-slate-300">🇺🇬 Uganda</span>
                     <span class="text-sm font-bold text-red-400">UGX 20,000</span>
@@ -144,53 +143,3 @@
                     <span class="text-sm font-bold text-red-400">MWK 26,000</span>
                 </div>
                 <div class="bg-slate-900 border border-slate-800/60 p-4 rounded-2xl flex items-center justify-between">
-                    <span class="text-sm font-medium text-slate-300">🇷🇼 Rwanda</span>
-
-
-                  <script>
-    // 1. Explicitly target August 22, 2026 at 2:00 PM (14:00:00)
-    const targetLaunchTimestamp = new Date("August 22, 2026 14:00:00").getTime();
-
-    function updateStateflixTimer() {
-        const currentServerTime = new Date().getTime();
-        const durationRemaining = targetLaunchTimestamp - currentServerTime;
-
-        // 2. Prevent negative values if the date has passed
-        if (durationRemaining <= 0) {
-            clearInterval(stateflixIntervalIdentifier);
-            const countdownContainer = document.getElementById("countdown");
-            if (countdownContainer) {
-                countdownContainer.innerHTML = `
-                    <div class="py-10 text-center animate-bounce">
-                        <h2 class="text-3xl sm:text-5xl font-black text-red-500 tracking-tight mb-2">🚀 STATEFLIX IS LIVE! 🚀</h2>
-                        <p class="text-slate-400 font-bold text-sm uppercase tracking-widest">Refresh your page to activate accounts now!</p>
-                    </div>`;
-            }
-            return;
-        }
-
-        // 3. Precise mathematical division for structural units
-        const calculatedDays = Math.floor(durationRemaining / (1000 * 60 * 60 * 24));
-        const calculatedHours = Math.floor((durationRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const calculatedMinutes = Math.floor((durationRemaining % (1000 * 60 * 60)) / (1000 * 60));
-        const calculatedSeconds = Math.floor((durationRemaining % (1000 * 60)) / 1000);
-
-        // 4. Safe DOM injection with zero-padding logic
-        const daysElement = document.getElementById("days");
-        const hoursElement = document.getElementById("hours");
-        const minutesElement = document.getElementById("minutes");
-        const secondsElement = document.getElementById("seconds");
-
-        if (daysElement) daysElement.innerText = calculatedDays < 10 ? "0" + calculatedDays : calculatedDays;
-        if (hoursElement) hoursElement.innerText = calculatedHours < 10 ? "0" + calculatedHours : calculatedHours;
-        if (minutesElement) minutesElement.innerText = calculatedMinutes < 10 ? "0" + calculatedMinutes : calculatedMinutes;
-        if (secondsElement) secondsElement.innerText = calculatedSeconds < 10 ? "0" + calculatedSeconds : calculatedSeconds;
-    }
-
-    // 5. Initialize instantly on load to remove static 00 glitch, then tick every 1000ms
-    updateStateflixTimer();
-    const stateflixIntervalIdentifier = setInterval(updateStateflixTimer, 1000);
-                  </script>
-                </body>
-                </html>
-                  
