@@ -1,28 +1,7 @@
-```css
-/* Custom Global Utility Styles Override for Stateflix Ecosystem */
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
-
-/* Custom Webkit scrollbar definitions for sleek mobile visualization */
-::-webkit-scrollbar {
-    width: 6px;
-}
-
-::-webkit-scrollbar-track {
-    background: #020617; /* Matches Tailwinds slate-950 */
-}
-
-::-webkit-scrollbar-thumb {
-    background: #1e293b; /* Matches Tailwinds slate-800 */
-    border-radius: 9999px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #ef4444; /* Highlights to theme red on interaction */
-}
+html { scroll-behavior: smooth; }
+body { font-family: 'Plus Jakarta Sans', sans-serif; -webkit-font-smoothing: antialiased; }
+/* Scrollbar styles */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #020617; }
+::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #ef4444; }
