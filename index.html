@@ -1,69 +1,108 @@
-  <!-- ========================================== -->
-  <!-- PREMIUM COMPACT AUTHENTICATION SYSTEM      -->
-  <!-- ========================================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STATEFLIX AGENCIES</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="loader-content">
+      <h1 class="brand-title">STATE<span>FLIX</span></h1>
+      <p class="loader-subtitle">AGENCIES</p>
+      <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      <div class="status-wrapper">
+        <span class="loading-status" id="loading-status">Connecting nodes...</span>
+        <span class="loading-percentage" id="loading-percentage">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dashboard Container -->
+  <main class="main-content">
+    <nav class="navbar">
+      <div class="nav-logo">STATE<span>FLIX</span></div>
+      <div class="nav-actions">
+        <span class="live-indicator"><span class="pulse-dot"></span> 1,631 Online</span>
+        <button class="nav-btn">Start Earning</button>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <span class="badge">STATEFLIX AGENT GATEWAY</span>
+      <h1>Turn Smart Tasks Into <br><span>Real Digital Income</span></h1>
+      <p>Join thousands of active agents maximizing payouts daily. Withdraw instantly to Mobile Money or bank account.</p>
+    </section>
+
+    <section class="earning-matrix-grid">
+      <div class="earning-card">
+        <div class="card-icon">💬</div>
+        <h3 class="card-title">Paid International Chat</h3>
+        <p class="card-desc">Engage in active discussions and secure global messaging queues inside your portal.</p>
+        <div class="card-payout">Earn up to $4.60<span> / chat session</span></div>
+        <button class="card-action-btn">Launch Queue</button>
+      </div>
+
+      <div class="earning-card">
+        <div class="card-icon">🎵</div>
+        <h3 class="card-title">Audio Track Buffering</h3>
+        <p class="card-desc">Review viral hits, trending soundbites, and acoustic tracks to verify telemetry metadata.</p>
+        <div class="card-payout">Earn up to $1.35<span> / music track</span></div>
+        <button class="card-action-btn">Stream Sound</button>
+      </div>
+
+      <div class="earning-card">
+        <div class="card-icon">🎮</div>
+        <h3 class="card-title">Color Node Tournament</h3>
+        <p class="card-desc">Match fast-paced grid algorithms, challenge live users, and top the leaderboard node matrix.</p>
+        <div class="card-payout">Earn up to $3.25<span> / round win</span></div>
+        <button class="card-action-btn">Play Challenge</button>
+      </div>
+
+      <div class="earning-card">
+        <div class="card-icon">🚀</div>
+        <h3 class="card-title">Affiliate Network Leverage</h3>
+        <p class="card-desc">Invite global digital agents onto the StateFlix framework and capture compounding tier-commissions.</p>
+        <div class="card-payout">Instant Multiplier<span> Unlimited Tiers</span></div>
+        <button class="card-action-btn">Get Invite Link</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Login/Register Popup Window -->
   <div id="auth-modal" class="auth-modal-overlay">
     <div class="auth-card">
-      <!-- Modal Close Interface Switch -->
       <button class="modal-close-btn" id="close-auth-btn">&times;</button>
-      
-      <!-- Dynamic Form Toggle Controls -->
       <div class="auth-tabs">
         <button class="tab-btn active" id="tab-login" onclick="switchAuthTab('login')">Sign In</button>
         <button class="tab-btn" id="tab-register" onclick="switchAuthTab('register')">Create Account</button>
       </div>
+      <div class="auth-alert" id="auth-alert"></div>
 
-      <!-- Live Notification Banner Node -->
-      <div class="auth-alert" id="auth-alert" style="display: none;"></div>
-
-      <!-- SIGN IN COMPONENT MATRIX -->
       <form id="login-form" class="auth-form active" onsubmit="handleAuthSubmit(event, 'login')">
-        <div class="form-group">
-          <label>Agent Email or Username</label>
-          <input type="text" placeholder="Enter your credentials" required autocomplete="username">
-        </div>
-        <div class="form-group">
-          <div class="label-wrapper">
-            <label>Secure Password</label>
-            <a href="#" class="forgot-link">Forgot?</a>
-          </div>
-          <input type="password" placeholder="••••••••" required autocomplete="current-password">
-        </div>
+        <div class="form-group"><label>Agent Email or Username</label><input type="text" required></div>
+        <div class="form-group"><label>Secure Password</label><input type="password" required></div>
         <button type="submit" class="submit-auth-btn">Initialize Session 🚀</button>
       </form>
 
-      <!-- REGISTRATION COMPONENT MATRIX -->
       <form id="register-form" class="auth-form" onsubmit="handleAuthSubmit(event, 'register')">
         <div class="form-row">
-          <div class="form-group">
-            <label>First Name</label>
-            <input type="text" placeholder="John" required>
-          </div>
-          <div class="form-group">
-            <label>Last Name</label>
-            <input type="text" placeholder="Doe" required>
-          </div>
+          <div class="form-group"><label>First Name</label><input type="text" required></div>
+          <div class="form-group"><label>Last Name</label><input type="text" required></div>
         </div>
-        <div class="form-group">
-          <label>Select Matrix Username</label>
-          <input type="text" placeholder="agent_prime" required>
-        </div>
-        <div class="form-group">
-          <label>Email Address</label>
-          <input type="email" placeholder="name@domain.com" required>
-        </div>
-        <div class="form-group">
-          <label>Referral Agent Username (Optional)</label>
-          <input type="text" placeholder="Leave blank if none">
-        </div>
-        <div class="form-group">
-          <label>Choose Secure Password</label>
-          <input type="password" placeholder="Create strong code" required autocomplete="new-password">
-        </div>
-        <div class="form-checkbox">
-          <input type="checkbox" id="terms-check" required>
-          <label for="terms-check">I verify my age and agree to StateFlix Terms.</label>
-        </div>
-        <button type="submit" class="submit-auth-btn">Activate Node Portfolio 💳</button>
+        <div class="form-group"><label>Select Username</label><input type="text" required></div>
+        <div class="form-group"><label>Email Address</label><input type="email" required></div>
+        <div class="form-group"><label>Password</label><input type="password" required></div>
+        <button type="submit" class="submit-auth-btn">Activate Portfolio 💳</button>
       </form>
     </div>
   </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
