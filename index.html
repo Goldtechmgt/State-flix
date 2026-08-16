@@ -3,49 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stateflix Agencies - Official Launch</title>
-    <!-- Tailwind CSS Engine -->
-    <script src="https://tailwindcss.com"></script>
-    <link href="https://googleapis.com" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Stateflix Agency - Digital Earning Platform</title>
+    <!-- Modern Tailwind CSS v4 CDN -->
+    <script src="https://jsdelivr.net"></script>
+    <!-- FontAwesome Vector Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        .glow-hover:hover {
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+    </style>
 </head>
-<body class="bg-slate-950 text-white selection:bg-red-500 selection:text-white">
-    <!-- Header with Timer and Navigation -->
-    <nav class="border-b border-slate-900 bg-slate-950/80 p-6">
-        <div class="text-2xl font-extrabold text-white">STATEFLIX <span class="text-sm font-medium">AGENCIES</span></div>
-    </nav>
-    <header id="countdown-header" class="px-6 py-16 text-center">
-        <h1 class="text-4xl font-extrabold mb-6">The Ultimate Digital <span class="text-red-500">Earning</span>.</h1>
-        <div id="timer-box" class="bg-slate-900/60 p-6 rounded-3xl max-w-xl mx-auto mb-10">
-            <p class="text-sm text-slate-400 mb-4">Countdown to Grand Launch</p>
-            <div class="grid grid-cols-4 gap-2 text-center">
-                <div><span id="days" class="text-3xl font-extrabold text-red-500">00</span><p class="text-xs text-slate-500">Days</p></div>
-                <div><span id="hours" class="text-3xl font-extrabold text-red-500">00</span><p class="text-xs text-slate-500">Hours</p></div>
-                <div><span id="minutes" class="text-3xl font-extrabold text-red-500">00</span><p class="text-xs text-slate-500">Mins</p></div>
-                <div><span id="seconds" class="text-3xl font-extrabold text-red-500">00</span><p class="text-xs text-slate-500">Secs</p></div>
+<body class="bg-[#0f172a] text-slate-200 font-sans selection:bg-blue-500 selection:text-white">
+
+    <!-- Header Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-[#1e293b]/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center shadow-lg shadow-blue-500/20">
+                    <span class="text-white font-black text-xl tracking-wider">S</span>
+                </div>
+                <span class="font-extrabold text-xl bg-gradient-to-r from-white via-slate-200 to-blue-400 bg-clip-text text-transparent tracking-tight">STATEFLIX <span class="text-blue-500 text-sm font-semibold tracking-normal">AGENCY</span></span>
+            </div>
+            <!-- Quick Section Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+                <a href="#earning-hub" class="hover:text-white transition-colors">Earning Hub</a>
+                <a href="#how-it-works" class="hover:text-white transition-colors">How It Works</a>
+            </nav>
+            <!-- Call to Actions -->
+            <div class="flex items-center gap-4">
+                <a href="#login" class="text-sm font-semibold text-slate-300 hover:text-white transition-colors px-4 py-2">Sign In</a>
+                <a href="#register" class="bg-blue-600 hover:bg-blue-500 text-white text-sm font-bold px-5 py-2.5 rounded-xl transition-all shadow-lg shadow-blue-600/20 active:scale-95">Get Started</a>
             </div>
         </div>
     </header>
 
-    <!-- Content Sections -->
-    <section id="earning-methods" class="max-w-7xl mx-auto px-6 py-20">
-        <h2 class="text-3xl font-extrabold text-center mb-16">How You Will Earn</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-slate-900/40 p-8 rounded-3xl">Chat, Stream, & Play Tasks</div>
-        </div>
-    </section>
+    <main>
+        <!-- Conversion Driven Hero Showcase Section -->
+        <section class="relative pt-20 pb-16 overflow-hidden">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(59,130,246,0.08),transparent_50%)]"></div>
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-xs font-semibold text-blue-400 mb-6">
+                    <span class="flex h-2 w-2 rounded-full bg-blue-500 animate-pulse"></span>
+                    Now Live: Active Ecosystem Monitored by SCITECH MGT
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight mb-6 max-w-4xl mx-auto leading-[1.1]">
+                    Turn Everyday Digital Tasks Into <span class="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">Real Income</span>
+                </h1>
+                <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                    Welcome to the premiere stateflix workspace layout. Stream media, learn specialized skills, engage with global tasks, and unlock immediate daily payouts.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#register" class="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-blue-900/30 transition-all text-center">Create Your Free Account</a>
+                    <a href="#earning-hub" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold px-8 py-4 rounded-xl transition-all text-center">Explore Earning Portals</a>
+                </div>
+            </div>
+        </section>
 
-    <!-- Registration Form -->
-    <section id="register" class="max-w-md mx-auto px-6 py-24">
-        <div class="bg-slate-900 p-8 rounded-3xl">
-            <h3 class="text-2xl font-bold text-center mb-6">Create Pre-Launch Profile</h3>
-            <form class="space-y-4" onsubmit="event.preventDefault();">
-                <input type="text" placeholder="Full Name" class="w-full bg-slate-950 p-3 rounded-xl border border-slate-800">
-                <button type="submit" class="w-full bg-red-600 p-3 rounded-xl">Reserve Spot</button>
-            </form>
-        </div>
-    </section>
+        <!-- Earning Channels Segmented Grid Layout -->
+        <section id="earning-hub" class="py-16 bg-[#0b0f19] border-y border-slate-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">Multi-Tier Earning Channels</h2>
+                    <p class="text-slate-400">Maximize performance metrics by utilizing all interactive modules within our dashboard infrastructure.</p>
+                </div>
 
-    <script src="script.js"></script>
-</body>
-</html>
+                <!-- Category 1: Streaming Portals -->
+                <div class="mb-12">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="p-2 rounded-lg bg-emerald-500/10 text-emerald-400"><i class="fa-solid fa-play"></i></div>
+                        <h3 class="text-xl font-bold text-white">Streaming Portals</h3>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 glow-hover flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl"><i class="fa-brands fa-spotify"></i></div>
+                                    <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-bold uppercase tracking-wider">New</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-white mb-2">Earn with Spotify</h4>
+                                <p class="text-sm text-slate-400 leading-relaxed mb-6">Get compensated for streaming targeted audio tracks, evaluating music playlists, and leaving feedback.</p>
+                            </div>
+                            <div class="border-t border-slate-800 pt-4 flex items-center justify-between"><span class="text-xs text-slate-500">High Conversion Rate</span><i class="fa-solid fa-arrow-right text-slate-400 text-sm"></i></div>
+                        </div>
+                        <div class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 glow-hover flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center text-red-400 text-xl"><i class="fa-brands fa-youtube"></i></div>
+                                </div>
+                                <h4 class="text-lg font-bold text-white mb-2">YouTube Videos</h4>
+                                <p class="text-sm text-slate-400 leading-relaxed mb-6">Watch assigned informational, promotional, or tutorial videos to automatically accumulate rewards.</p>
+                            </div>
+                            <div class="border-t border-slate-800 pt-4 flex items-center justify-between"><span class="text-xs text-slate-500">Instant Verification</span><i class="fa-solid fa-arrow-right text-slate-400 text-sm"></i></div>
+                        </div>
+                        <div class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 glow-hover flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 text-xl"><i class="fa-brands fa-tiktok"></i></div>
+                                </div>
+                                <h4 class="text-lg font-bold text-white mb-2">TikTok Videos</h4>
+                                <p class="text-sm text-slate-400 leading-relaxed mb-6">Review short-form promotional content directly within your personalized digital workflow queue.</p>
+                            </div>
+                            <div class="border-t border-slate-800 pt-4 flex items-center justify-between"><span class="text-xs text-slate-500">High Volume Queue</span><i class="fa-solid fa-arrow-right text-slate-400 text-sm"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 2: Gamified Rewards -->
+                <div class="mb-12">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="p-2 rounded-lg bg-amber-500/10 text-amber-400"><i class="fa-solid fa-gamepad"></i></div>
+                        <h3 class="text-xl font-bold text-white">Gamified Rewards</h3>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 glow-hover flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-400 text-xl"><i class="fa-solid fa-palette"></i></div>
