@@ -10,6 +10,9 @@ body {
   color: #ffffff;
   overflow-x: hidden;
 }
+#dashboard-view
+.metrics-summary-cards
+.dashboard-workspace-grid
 
 #preloader {
   position: fixed;
