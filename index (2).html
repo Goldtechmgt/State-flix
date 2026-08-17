@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stateflix Agency - Smart Earning Platform</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome for professional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+        }
+        .card-blur {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+        }
+    </style>
+</head>
+<body class="gradient-bg text-slate-100 font-sans antialiased min-h-screen">
+
+    <!-- Header / Navbar -->
+    <header class="border-b border-slate-800/80 sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-gradient-to-tr from-purple-600 to-indigo-500 p-2.5 rounded-xl shadow-lg shadow-purple-500/20">
+                    <i class="fa-solid fa-bolt text-xl text-white"></i>
+                </div>
+                <span class="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-200 to-purple-400 bg-clip-text text-transparent">
+                    STATEFLIX <span class="text-purple-500">AGENCY</span>
+                </span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#features" class="hover:text-purple-400 transition-colors">Earning Hub</a>
+                <a href="#workflow" class="hover:text-purple-400 transition-colors">How It Works</a>
+                <a href="#stats" class="hover:text-purple-400 transition-colors">Statistics</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-sm font-semibold text-slate-300 hover:text-white transition-colors">Sign In</a>
+                <a href="#" class="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white px-5 py-2.5 rounded-xl text-sm font-semibold shadow-lg shadow-purple-500/20 transition-all transform hover:-translate-y-0.5">
+                    Get Started <i class="fa-solid fa-arrow-right ml-1.5 text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-400 border border-purple-500/20 mb-6 tracking-wide uppercase">
+                <span class="w-1.5 h-1.5 rounded-full bg-purple-400 animate-pulse"></span> Next-Gen Monetization Platform
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight max-w-4xl mx-auto leading-[1.15] text-white">
+                Turn Your Daily Digital Activities Into <span class="bg-gradient-to-r from-purple-400 via-fuchsia-400 to-indigo-400 bg-clip-text text-transparent text-glow">Real Revenue</span>
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto font-normal leading-relaxed">
+                Welcome to Stateflix Agency. Watch videos, complete fun challenges, learn high-ticket trading skills, and maximize your earnings instantly.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#features" class="w-full sm:w-auto bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white px-8 py-4 rounded-2xl font-bold shadow-xl shadow-purple-500/25 transition-all text-center">
+                    Explore Earning Methods
+                </a>
+                <a href="#" class="w-full sm:w-auto card-blur hover:bg-white/5 text-slate-200 hover:text-white px-8 py-4 rounded-2xl font-bold transition-all border border-slate-700 text-center">
+                    Watch Demo Video
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Features Earning Grid -->
+    <section id="features" class="py-20 relative border-t border-slate-900 bg-slate-950/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
+                    Discover Diverse Ways to Earn
+                </h2>
+                <p class="mt-4 text-slate-400">
+                    Maximize your side-income streams through 16+ customized interactive products designed for effortless monetization.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Social Media Streams -->
+                <div class="card-blur p-6 rounded-3xl group hover:border-purple-500/40 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-spotify text-emerald-400 text-2xl"></i>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-xl font-bold text-white">Earn with Spotify</h3>
+                        <span class="px-2 py-0.5 text-[10px] font-bold bg-emerald-500/20 text-emerald-400 rounded-md border border-emerald-500/30 uppercase tracking-wider">New</span>
+                    </div>
+                    <p class="mt-3 text-sm text-slate-400 leading-relaxed">Get paid directly for listening to trending music tracks and compiling custom streaming playlists.</p>
+                </div>
+
+                <div class="card-blur p-6 rounded-3xl group hover:border-purple-500/40 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-2xl bg-red-500/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-youtube text-red-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">YouTube Videos</h3>
+                    <p class="mt-3 text-sm text-slate-400 leading-relaxed">Monetize your watch time. Earn continuous payouts simply by streaming short videos and content creators.</p>
+                </div>
+
+                <div class="card-blur p-6 rounded-3xl group hover:border-purple-500/40 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-2xl bg-slate-100/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-tiktok text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">TikTok Videos</h3>
+                    <p class="mt-3 text-sm text-slate-400 leading-relaxed">Turn your daily viral video scrolling habit into a stable revenue stream with verified watch milestones.</p>
+                </div>
+
+                <!-- Interactive Challenges -->
+                <div class="card-blur p-6 rounded-3xl group hover:border-purple-500/40 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-500/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-palette text-amber-400 text-2xl"></i>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-xl font-bold text-white">Colour Challenge</h3>
+                        <span class="px-2 py-0.5 text-[10px] font-bold bg-amber-500/20 text-amber-400 rounded-md border border-amber-500/30 uppercase tracking-wider">Hot</span>
+                    </div>
+                    <p class="mt-3 text-sm text-slate-400 leading-relaxed">Test your visual speed and coordination in live color matching challenges to claim top rewards.</p>
+                </div>
+
+                <div class="card-blur p-6 rounded-3xl group hover:border-purple-500/40 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-2xl bg-purple-500/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-brain text-purple-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Trivia & Math Challenges</h3>
+                    <p class="mt-3 text-sm text-slate-400 leading-relaxed">Exercise your intelligence. Compete in quick trivia, riddles, and fun math questions to unlock instant balances.</p>
+                </div>
+
+                <!-- Financial & Growth Products -->
+                <div class="card-blur p-6 rounded-3xl group hover:border-purple-500/40 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-line text-indigo-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Free Forex Classes & Deriv Tips</h3>
+                    <p class="mt-3 text-sm text-slate-400 leading-relaxed">Access expert-led premium webinars and modern financial analytics strategies to trade profitably.</p>
+                </div>
+
+                <!-- Microtasks -->
+                <div class="card-blur p-6 rounded-3xl group hover:border-purple-500/40 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-pointer text-cyan-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Click Ads & Spins</h3>
+                    <p class="mt-3 text-sm text-slate-400 leading-relaxed">Complete daily low-effort microtasks, browse promotional partner ads, and spin lucky prize wheels.</p>
+                </div>
+
+                <div class="card-blur p-6 rounded-3xl group hover:border-purple-500/40 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-2xl bg-fuchsia-500/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-comments text-fuchsia-400 text-2xl"></i>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-xl font-bold text-white">Chat Foreigners</h3>
+                        <span class="px-2 py-0.5 text-[10px] font-bold bg-fuchsia-500/20 text-fuchsia-400 rounded-md border border-fuchsia-500/30 uppercase tracking-wider">New</span>
+                    </div>
+                    <p class="mt-3 text-sm text-slate-400 leading-relaxed">Engage in peer networking chats, language exchange, and expand community connections globally.</p>
+                </div>
+
+                <div class="card-blur p-6 rounded-3xl group hover:border-purple-500/40 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-book-open text-blue-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Business E-books & Classes</h3>
+                    <p class="mt-3 text-sm text-slate-400 leading-relaxed">Download professional growth resources and attend premium technology skills training modules.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Workflow Steps -->
+    <section id="workflow" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-900">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+            <div class="lg:col-span-1">
+                <h2 class="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
+                    Simple Steps to Your Success
+                </h2>
+                <p class="mt-4 text-slate-400 text-sm leading-relaxed">
+                    We designed a completely friction-free framework for users to establish their dashboards and withdraw direct cash balances instantly.
+                </p>
+            </div>
+            <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-3 gap-8">
+                <div class="relative">
+                    <div class="text-4xl font-black text-purple-500/30 mb-2">01</div>
+                    <h4 class="text-lg font-bold text-white">Create Profile</h4>
+                    <p class="mt-1 text-xs text-slate-400 leading-relaxed">Register securely online and complete account verification instantly.</p>
+                </div>
+                <div class="relative">
+                    <div class="text-4xl font-black text-purple-500/30 mb-2">02</div>
+                    <h4 class="text-lg font-bold text-white">Complete Tasks</h4>
+                    <p class="mt-1 text-xs text-slate-400 leading-relaxed">Select any monetization tools from videos, spotify, quizzes or chats.</p>
+                </div>
+                <div class="relative">
+                    <div class="text-4xl font-black text-purple-500/30 mb-2">03</div>
+                    <h4 class="text-lg font-bold text-white">Fast Payout</h4>
+                    <p class="mt-1 text-xs text-slate-400 leading-relaxed">Request easy mobile money or e-wallet payouts seamlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 bg-slate-950 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+            <p>&copy; 2026 Stateflix Agency. All rights reserved.</p>
+            <p>Powered by SCITECH MGT</p>
+        </div>
+    </footer>
+
+</body>
+</html>
