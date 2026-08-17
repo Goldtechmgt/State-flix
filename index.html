@@ -20,6 +20,45 @@
         .text-glow {
             text-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
         }
+
+        .whatsapp-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 20px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-4px);
+    background: #20bd5a;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.whatsapp-icon {
+    font-size: 22px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .whatsapp-btn {
+        right: 15px;
+        bottom: 15px;
+        padding: 13px 17px;
+        font-size: 14px;
+    }
+}
     </style>
 </head>
 <body class="gradient-bg text-slate-100 font-sans antialiased min-h-screen">
@@ -41,8 +80,8 @@
                 <a href="#stats" class="hover:text-purple-400 transition-colors">Statistics</a>
             </nav>
             <div class="flex items-center space-x-4">
-                <a href="#" class="text-sm font-semibold text-slate-300 hover:text-white transition-colors">Sign In</a>
-                <a href="#" class="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white px-5 py-2.5 rounded-xl text-sm font-semibold shadow-lg shadow-purple-500/20 transition-all transform hover:-translate-y-0.5">
+                <a href="https://mula-prime.com/user/register.php?ref=Samuel123" class="text-sm font-semibold text-slate-300 hover:text-white transition-colors">Sign In</a>
+                <a href="https://mula-prime.com/user/register.php?ref=Samuel123" class="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white px-5 py-2.5 rounded-xl text-sm font-semibold shadow-lg shadow-purple-500/20 transition-all transform hover:-translate-y-0.5">
                     Get Started <i class="fa-solid fa-arrow-right ml-1.5 text-xs"></i>
                 </a>
             </div>
@@ -65,10 +104,19 @@
                 <a href="#features" class="w-full sm:w-auto bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white px-8 py-4 rounded-2xl font-bold shadow-xl shadow-purple-500/25 transition-all text-center">
                     Explore Earning Methods
                 </a>
-                <a href="#" class="w-full sm:w-auto card-blur hover:bg-white/5 text-slate-200 hover:text-white px-8 py-4 rounded-2xl font-bold transition-all border border-slate-700 text-center">
+                <a href="https://vt.tiktok.com/ZSV6KEeP5/" class="w-full sm:w-auto card-blur hover:bg-white/5 text-slate-200 hover:text-white px-8 py-4 rounded-2xl font-bold transition-all border border-slate-700 text-center">
                     Watch Demo Video
                 </a>
             </div>
+        </div>
+        <div>
+        <a href="https://wa.me/256775148084?text=Hello%20coach%20am%20interested%20in%20STATEFLIX%20please%20link%20me%20uphttps://wa.me/256775148084?text=Hello%20coach%20am%20interested%20in%20STATEFLIX%20please%20link%20me%20up"
+   class="whatsapp-btn"
+   target="_blank"
+   rel="noopener noreferrer">
+    <span class="whatsapp-icon">💬</span>
+    Chat with us on WhatsApp
+        </a>
         </div>
     </section>
 
