@@ -64,6 +64,221 @@
         font-size: 14px;
     }
 }
+        .stateflix-thumbnail {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  aspect-ratio: 16 / 9;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 15% 50%, rgba(255, 0, 0, .22), transparent 28%),
+    radial-gradient(circle at 85% 30%, rgba(180, 0, 0, .15), transparent 30%),
+    #050608;
+  border: 1px solid rgba(255, 0, 0, .3);
+  box-shadow: 0 25px 80px rgba(0,0,0,.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Red diagonal decorations */
+.stateflix-thumbnail::before,
+.stateflix-thumbnail::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 700px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,0,0,.55),
+    rgba(100,0,0,.2)
+  );
+  transform: rotate(25deg);
+  opacity: .5;
+}
+
+.stateflix-thumbnail::before {
+  left: -150px;
+  top: -200px;
+}
+
+.stateflix-thumbnail::after {
+  right: -150px;
+  bottom: -250px;
+}
+
+/* Red glow */
+.thumbnail-glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 5%;
+  top: 10%;
+  background: #ff0000;
+  filter: blur(180px);
+  opacity: .12;
+}
+
+/* Logo icon */
+.stateflix-logo-icon {
+  position: absolute;
+  left: 7%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 190px;
+  height: 190px;
+  border-radius: 55px;
+  background: linear-gradient(
+    145deg,
+    #ff3030,
+    #b00000 55%,
+    #380000
+  );
+  box-shadow:
+    0 0 35px rgba(255,0,0,.4),
+    inset 0 2px 5px rgba(255,255,255,.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stateflix-logo-icon span {
+  font-family: Arial, sans-serif;
+  font-size: 125px;
+  font-weight: 900;
+  font-style: italic;
+  color: white;
+  text-shadow: 5px 8px 15px #330000;
+}
+
+/* Main content */
+.thumbnail-content {
+  position: relative;
+  z-index: 2;
+  margin-left: 300px;
+  text-align: center;
+}
+
+.thumbnail-content h1 {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: clamp(55px, 8vw, 115px);
+  line-height: .9;
+  font-weight: 900;
+  letter-spacing: -5px;
+  text-shadow: 0 8px 25px rgba(0,0,0,.8);
+}
+
+.thumbnail-content h1 span {
+  color: #f5f5f5;
+}
+
+.thumbnail-content h1 b {
+  color: #ff1515;
+}
+
+.tagline {
+  margin-top: 25px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: clamp(12px, 1.6vw, 22px);
+  font-weight: 700;
+  letter-spacing: 7px;
+}
+
+.tagline strong {
+  color: #ff1717;
+}
+
+.thumbnail-line {
+  width: 55%;
+  height: 3px;
+  margin: 20px auto;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #ff0000,
+    transparent
+  );
+}
+
+.thumbnail-features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  font-size: clamp(9px, 1.1vw, 15px);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.thumbnail-features span:nth-child(even) {
+  color: #ff1515;
+}
+
+.thumbnail-button {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 11px 35px;
+  border: 2px solid #ff1111;
+  border-radius: 8px;
+  color: #ff1515;
+  font-family: Arial, sans-serif;
+  font-size: clamp(10px, 1.2vw, 17px);
+  font-weight: 900;
+  letter-spacing: 5px;
+  box-shadow: 0 0 20px rgba(255,0,0,.12);
+}
+
+/* Phone */
+@media (max-width: 700px) {
+
+  .stateflix-thumbnail {
+    border-radius: 10px;
+  }
+
+  .stateflix-logo-icon {
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    border-radius: 22px;
+  }
+
+  .stateflix-logo-icon span {
+    font-size: 55px;
+  }
+
+  .thumbnail-content {
+    margin-left: 90px;
+  }
+
+  .thumbnail-content h1 {
+    font-size: 48px;
+    letter-spacing: -3px;
+  }
+
+  .tagline {
+    letter-spacing: 2px;
+    margin-top: 12px;
+  }
+
+  .thumbnail-features {
+    gap: 5px;
+    font-size: 7px;
+  }
+
+  .thumbnail-button {
+    margin-top: 12px;
+    padding: 6px 12px;
+    letter-spacing: 2px;
+  }
+                                }
     </style>
 </head>
 <body class="gradient-bg text-slate-100 font-sans antialiased min-h-screen">
@@ -266,7 +481,37 @@
             <p>Powered by GOLDTECH MGT</p>
         </div>
     </footer>
+<section class="stateflix-thumbnail">
+  <div class="thumbnail-glow"></div>
 
+  <div class="stateflix-logo-icon">
+    <span>S</span>
+  </div>
+
+  <div class="thumbnail-content">
+    <h1><span>STATE</span><b>FLIX</b></h1>
+
+    <p class="tagline">
+      STREAM MORE. <strong>PAY LESS.</strong> ENJOY BEST.
+    </p>
+
+    <div class="thumbnail-line"></div>
+
+    <div class="thumbnail-features">
+      <span>🎬 MOVIES</span>
+      <span>│</span>
+      <span>📺 TV SHOWS</span>
+      <span>│</span>
+      <span>📡 LIVE TV</span>
+      <span>│</span>
+      <span>⬇ DOWNLOADS</span>
+    </div>
+
+    <div class="thumbnail-button">
+      ALL IN ONE ENTERTAINMENT
+    </div>
+  </div>
+</section>
 </body>
 </html>
  
